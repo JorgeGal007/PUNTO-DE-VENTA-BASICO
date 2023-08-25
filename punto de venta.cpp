@@ -11,9 +11,14 @@ void pantallaVendedor();
 void altaProducto();
 void bajaProducto();
 void modProducto();
+void consultarProducto();
 void altaUsu();
 void bajaUsu();
 void modUsu();
+void consultarUsu();
+
+//DECLARACIÓN DE VARIABLES GLOBALES
+string productos[50];
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
@@ -57,10 +62,12 @@ void pantallaAdmin(){
 		cout<<"1. Alta de producto."<<endl;
 		cout<<"2. Baja de producto."<<endl;
 		cout<<"3. Modificar producto."<<endl;
-		cout<<"4. Alta de usuario."<<endl;
-		cout<<"5. Baja de usuario."<<endl;
-		cout<<"6. Modificación de usuario."<<endl;
-		cout<<"7. Regresar al menú principal."<<endl;
+		cout<<"4. Consultar producto"<<endl;
+		cout<<"5. Alta de usuario."<<endl;
+		cout<<"6. Baja de usuario."<<endl;
+		cout<<"7. Modificación de usuario."<<endl;
+		cout<<"8. Consultar usuario."<<endl;
+		cout<<"9. Regresar al menú principal."<<endl;
 		cin>>opt;
 		
 		switch(opt){
@@ -74,19 +81,30 @@ void pantallaAdmin(){
 			
 			default: cout<<"Ingrese una opción válida"<<endl;
 		}
-	}while(opt != 7);
+	}while(opt != 9);
 	
 	cout<<endl;
 	cout<<"En construcción"<<endl;
 }
 
 void altaProducto(){
+	
 }
 
 void bajaProducto(){
 }
 
 void modProducto(){
+}
+
+void consultarProducto(){
+	
+	string producto;
+	
+	cout<<"Inserte el producto a consultar: ";
+	cin>>producto;
+	
+	
 }
 
 void altaUsu(){
@@ -96,6 +114,9 @@ void bajaUsu(){
 }
 
 void modUsu(){
+}
+
+void consultarUsu(){
 }
 
 void pantallaVendedor(){
