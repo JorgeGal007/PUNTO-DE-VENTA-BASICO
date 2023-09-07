@@ -17,7 +17,7 @@ void bajaUsu();
 void modUsu();
 void consultarUsu();
 
-//DECLARACIÓN DE VARIABLES GLOBALES
+//DECLARACIÃ“N DE VARIABLES GLOBALES
 string productos[50];
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
@@ -34,11 +34,11 @@ void pantallaPrincipal(){
 	int opt;
 	
 	do{
-		cout<<"\t\t\t\t¿A donde desea ingresar?"<<endl;
+		cout<<"\t\t\t\tÂ¿A donde desea ingresar?"<<endl;
 		cout<<"1. Administrador"<<endl;
 		cout<<"2. Vendedor"<<endl;
 		cout<<"3. Salir"<<endl;
-		cout<<"Ingrese la opción: ";
+		cout<<"Ingrese una opciÃ³n: ";
 		cin>>opt;
 		
 		switch(opt){
@@ -46,7 +46,7 @@ void pantallaPrincipal(){
 			case 2: pantallaVendedor(); break;
 			case 3: cout<<"Vuelva pronto :)"<<endl; break;
 			
-			default: cout<<"Por favor ingresa un valor aceptado"<<endl;
+			default: cout<<"\nPor favor ingresa un valor aceptado"<<endl;
 		}
 		
 	}while(opt != 3);
@@ -57,7 +57,7 @@ void pantallaAdmin(){
 	int opt;
 	
 	do{
-		cout<<"\n¿Qué deseas hacer?"<<endl;
+		cout<<"\nÂ¿QuÃ© deseas hacer?"<<endl;
 		cout<<endl;
 		cout<<"1. Alta de producto."<<endl;
 		cout<<"2. Baja de producto."<<endl;
@@ -65,26 +65,29 @@ void pantallaAdmin(){
 		cout<<"4. Consultar producto"<<endl;
 		cout<<"5. Alta de usuario."<<endl;
 		cout<<"6. Baja de usuario."<<endl;
-		cout<<"7. Modificación de usuario."<<endl;
+		cout<<"7. ModificaciÃ³n de usuario."<<endl;
 		cout<<"8. Consultar usuario."<<endl;
-		cout<<"9. Regresar al menú principal."<<endl;
+		cout<<"9. Regresar al menÃº principal."<<endl;
+		cout<<"Ingrese una opciÃ³n: ";
 		cin>>opt;
 		
 		switch(opt){
 			case 1: altaProducto(); break;
 			case 2: bajaProducto(); break;
 			case 3: modProducto(); break;
-			case 4: altaUsu(); break;
-			case 5: bajaUsu(); break;
-			case 6: modUsu(); break;
-			case 7: pantallaPrincipal(); break;
+			case 4: consultarProducto(); break;
+			case 5: altaUsu(); break;
+			case 6: bajaUsu(); break;
+			case 7: modUsu(); break;
+			case 8: consultarUsu(); break;
+			case 9: pantallaPrincipal(); break;
 			
-			default: cout<<"Ingrese una opción válida"<<endl;
+			default: cout<<"Ingrese una opciÃ³n vÃ¡lida"<<endl;
 		}
 	}while(opt != 9);
 	
 	cout<<endl;
-	cout<<"En construcción"<<endl;
+	cout<<"En construcciÃ³n"<<endl;
 }
 
 void altaProducto(){
@@ -121,5 +124,5 @@ void consultarUsu(){
 
 void pantallaVendedor(){
 	cout<<endl;
-	cout<<"En construcción"<<endl;
+	cout<<"En construcciÃ³n"<<endl;
 }
